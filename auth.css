@@ -19,18 +19,47 @@ body{
 .window{
     background-color: #fff;
     width: 350px;
-    height: 500px;
     border-radius: 0.6rem;
     position: absolute;
     box-shadow: 0 .4rem .8rem #0005;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding: 25px;
 }
 
 .window__title{
     font-size: 45px;
     text-align: center;
-    padding: 25px;
 }
+
+form input{
+    box-sizing: border-box;
+    height: 50px;
+    max-width: 100%;
+    margin-top: 35px;
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid rgba(196, 12, 227);
+    opacity: 0.7;
+    border-radius: 0.6rem;
+    padding: 15px;
+}
+
+form input[type="button"]{
+    height: 80px;
+    width: 150px;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #6F21C4, #86A8E7, #F61494);
+    opacity: 0.7;
+    transform: translateX(50%);
+    transition: all 0.3s;
+}
+
+form input[type="button"]:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
 
