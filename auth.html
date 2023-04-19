@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Авторизация</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="css/auth.css"/>
 </head>
-<body>
-  <div class="container">
+<body class="gradient">
     <div class="window">
       <p class="window__title"><strong>Вход</strong></p>
-      <form action="" method="get">
-          <input class="input__login" name="login" type="text" placeholder="Логин"/><br>
-          <input class="input__password" name="password" type="password" placeholder="Пароль"/><br>
-          <input class="input__enter" name="enter" type="button" value="Войти"/>
+      <form action="" method="get" class="row">
+          <input class="input__login" name="login" id="login" type="text" placeholder="Логин"/><br>
+          <input class="input__password" name="password" id="password" type="password" placeholder="Пароль"/><br>
+          <input class="input__enter" name="enter" id="enter" type="button" disabled value="Войти"/>
       </form>
     </div>
-  </div>
+    <script src="js/auth.js"></script>
 </body>
 </html>
