@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(45deg, #6F21C4, #86A8E7, #F61494);
-    animation: gradient 20s infinite linear;
+    animation: gradient 30s infinite linear;
     background-size: 700%;
 }
 
@@ -155,6 +155,12 @@ thead th {
     cursor: pointer;
     text-transform: capitalize;
     text-align: left;
+
+    transition: all 0.3s;
+}
+
+thead th:hover + thead th > span{
+    transition: all 0.3s;
 }
 
 tbody tr:nth-child(even) {
@@ -163,7 +169,7 @@ tbody tr:nth-child(even) {
 
 tbody tr {
     --delay: .1s;
-    transition: .5s ease-in-out var(--delay), background-color 0s;
+    transition: .5s ease-in-out var(--delay), background-color 0.3s;
 }
 
 tbody tr.hide {
@@ -173,6 +179,7 @@ tbody tr.hide {
 
 tbody tr:hover {
     background-color: #fff6 !important;
+    transition: background-color 0.3s;
 }
 
 tbody tr td,
@@ -202,12 +209,12 @@ tbody tr.hide td img {
 
 .status.delivered {
     background-color: #86e49d;
-    color: #006b21;
+    /*color: #006b21;*/
 }
 
 .status.cancelled {
     background-color: #d893a3;
-    color: #b30021;
+    /*color: #b30021;*/
 }
 
 .status.pending {
