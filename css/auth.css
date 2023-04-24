@@ -32,8 +32,8 @@ input{
 }
 
 .window{
+    max-width: 450px;
     background-color: rgb(255, 255, 255);
-    width: 350px;
     border-radius: 0.6rem;
     position: absolute;
     box-shadow: 0 .4rem .8rem #0005;
@@ -45,6 +45,7 @@ input{
 
 .window__title{
     font-size: 45px;
+    width: 100%;
     text-align: center;
 }
 
@@ -95,10 +96,11 @@ form input[type="button"]{
     opacity: 0.8;
     justify-content: center;
     font-weight: 600;
+    cursor: pointer;
     transition: all 0.2s;
 }
 
-form input[type="button"]:hover{
+form input[type="button"]:enabled:hover{
     opacity: 1;
     box-shadow: 0 .4rem .8rem #0005;
     transition: all 0.2s;
@@ -109,7 +111,8 @@ form input[type="button"]:active{
     transition: all 0.2s;
 }
 
-form input[type="button"]:disabled{
+form input[type="button"]:hover:disabled{
+    box-shadow: none;
     background: grey;
     transition: all 0.2s;
 }
