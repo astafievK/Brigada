@@ -25,6 +25,26 @@ body {
     align-items: center;
 }
 
+.gradient{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #6F21C4, #86A8E7, #F61494);
+    animation: gradient 20s infinite linear;
+    background-size: 700%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0;
+    }
+}
+
 main.table {
     width: 82vw;
     height: 90vh;
